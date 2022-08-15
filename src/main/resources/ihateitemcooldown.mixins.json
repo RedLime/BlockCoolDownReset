@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.redlimerl.mc.ihateitemcooldown.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinClientPlayNetworkHandler"
+  ],
+  "client": [
+    "AccessorClientPlayerInteractionManager",
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
