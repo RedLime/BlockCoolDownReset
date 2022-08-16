@@ -10,7 +10,11 @@
   "contact": {},
   "license": "MIT",
   "environment": "client",
-  "entrypoints": {},
+  "entrypoints": {
+    "client": [
+      "com.redlimerl.mc.ihateitemcooldown.BreakCoolDownReset"
+    ]
+  },
   "mixins": [
     "ihateitemcooldown.mixins.json"
   ],

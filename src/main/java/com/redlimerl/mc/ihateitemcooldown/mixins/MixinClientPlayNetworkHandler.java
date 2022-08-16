@@ -1,5 +1,6 @@
 package com.redlimerl.mc.ihateitemcooldown.mixins;
 
+import com.redlimerl.mc.ihateitemcooldown.BreakCoolDownReset;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
@@ -19,7 +20,7 @@ public class MixinClientPlayNetworkHandler {
         instance.setOverlayMessage(message, tinted);
         if (message.getString().isEmpty()) {
             if (client.interactionManager != null)
-                ((AccessorClientPlayerInteractionManager) client.interactionManager).setBlockBreakCd(5);
+                ((AccessorClientPlayerInteractionManager) client.interactionManager).setBlockBreakCd(BreakCoolDownReset.COOL_DOWN);
         }
     }
 }
