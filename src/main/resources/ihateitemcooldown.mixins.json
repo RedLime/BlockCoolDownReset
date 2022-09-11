@@ -4,10 +4,11 @@
   "package": "com.redlimerl.mc.ihateitemcooldown.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "MixinInGameHud",
     "MixinClientPlayNetworkHandler"
   ],
   "client": [
-    "AccessorClientPlayerInteractionManager",
+    "AccessorClientPlayerInteractionManager"
   ],
   "injectors": {
     "defaultRequire": 1
